@@ -5,7 +5,7 @@
 
 ## Intro
 
-After finishing all 106 LeetCode SQL questions, I feel it could be good to summarize all questions by topics. 
+After finishing all 107 LeetCode SQL questions, I feel it could be good to summarize all questions by topics. 
 
 This note aims to **help people _learn and review SQL effeciently_**, espeically when trying to **have a quick catch up on a certain topic**, e.g. complex join, window function, recursive CTE and etc. If you would like to try questions by ID, you could jump to [LeetCode SQL Questions by ID](#leetcode-sql-questions-by-id) where I list all questions coverred in this repository.
 
@@ -418,3 +418,4 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1398 | [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | Medium | [Soln.](../master/Questions_by_ID/1398_Customers_Who_Bought_Products_A_and_B_but_Not_C.sql) |
 | 1407 | [Top Travellers](https://leetcode.com/problems/top-travellers/) | Easy | [Soln.](../master/Questions_by_ID/1407_Top_Travellers.sql) |
 | 1412 | [Find The Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | Medium | [Soln.](../master/Questions_by_ID/1412_Find_The_Quiet_Students_in_All_Exams.sql) |
+| 1421 | [NPV Queries](https://leetcode.cn/problems/npv-queries/) | Easy | [Soln.](../master/Questions_by_ID/1412_Find_The_Quiet_Students_in_All_Exams.sql) |
