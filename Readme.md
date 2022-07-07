@@ -21,7 +21,6 @@ And for the first draft, I mainly focus on **MySQL**.
     + [Window Function](#window-function)
     + [CASE WHEN / IIF](#case-when-or-iif)
     + [OFFSET FETCH](#offset-fetch)
-    + [PIVOT & UNPIVOT](#pivot-and-unpivot)
     + [Variable](#variable)
   * [LeetCode SQL Questions by ID](#leetcode-sql-questions-by-id)
 
@@ -296,15 +295,6 @@ And for the first draft, I mainly focus on **MySQL**.
 | 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | [Soln.](../master/OFFSET-FETCH/177_Nth_Highest_Salary.sql) |
 | 1321 | [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | Medium | [Soln.](../master/OFFSET-FETCH/1321_Restaurant_Growth.sql) | 
 
-
-### PIVOT and UNPIVOT
-
-| **#** | **Title** | **Difficulty** | **Solution** | 
-|---|---|---|---|
-| 602 | [Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/) | Medium |  [Soln.](../master/PIVOT-UNPIVOT/602_Friend_Requests_II_Who_Has_the_Most_Friends.sql) | 
-| 618 | [Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/) | Hard | [Soln.](../master/PIVOT-UNPIVOT/618_Students_Report_By_Geography.sql) | 
-| 1179 | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/) | Easy | [Soln.](../master/PIVOT-UNPIVOT/1179_Reformat_Department_Table.sql) | 
-| 1322 | [Ads Performance](https://leetcode.com/problems/ads-performance/) | Easy | [Soln.](../master/PIVOT-UNPIVOT/1322_Ads_Performance.sql) |
 
 
 ### Variable
