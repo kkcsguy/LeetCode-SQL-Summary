@@ -1,19 +1,20 @@
--- Solution: PIVOT/UNPIVOT
-SELECT id, 
-    "Jan" as Jan_Revenue,
-    "Feb" as Feb_Revenue,
-    "Mar" as Mar_Revenue,
-    "Apr" as Apr_Revenue,
-    "May" as May_Revenue,
-    "Jun" as Jun_Revenue,
-    "Jul" as Jul_Revenue,
-    "Aug" as Aug_Revenue,
-    "Sep" as Sep_Revenue,
-    "Oct" as Oct_Revenue,
-    "Nov" as Nov_Revenue,
-    "Dec" as Dec_Revenue
-FROM department
-PIVOT (
-    MAX(revenue)
-    FOR month IN ("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-) AS pvt;
+-- Solution:
+SELECT 
+    id, 
+    sum( if( month = 'Jan', revenue, null ) ) AS Jan_Revenue,
+    sum( if( month = 'Feb', revenue, null ) ) AS Feb_Revenue,
+    sum( if( month = 'Mar', revenue, null ) ) AS Mar_Revenue,
+    sum( if( month = 'Apr', revenue, null ) ) AS Apr_Revenue,
+    sum( if( month = 'May', revenue, null ) ) AS May_Revenue,
+    sum( if( month = 'Jun', revenue, null ) ) AS Jun_Revenue,
+    sum( if( month = 'Jul', revenue, null ) ) AS Jul_Revenue,
+    sum( if( month = 'Aug', revenue, null ) ) AS Aug_Revenue,
+    sum( if( month = 'Sep', revenue, null ) ) AS Sep_Revenue,
+    sum( if( month = 'Oct', revenue, null ) ) AS Oct_Revenue,
+    sum( if( month = 'Nov', revenue, null ) ) AS Nov_Revenue,
+    sum( if( month = 'Dec', revenue, null ) ) AS Dec_Revenue
+FROM 
+    Department
+GROUP BY 
+    id;
+
