@@ -2,12 +2,6 @@
 
 **_Last updated on July 6, 2022, covered 106 LeetCode SQL questions_**
 
-**WIP**
-- Update new SQL questions (Estimated Time: 31 August, 2021)
-- Rearrange the repository (Estimated Time: 25 September, 2021 - My Brithday :D)
-  1) Only one solution folder will be kept 
-  2) Update solution link 
-  3) Add Column "Topic" for [LeetCode SQL Questions by ID](#leetcode-sql-questions-by-id)
 
 ## Intro
 
