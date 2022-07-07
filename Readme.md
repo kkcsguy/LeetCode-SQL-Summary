@@ -418,4 +418,4 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1398 | [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | Medium | [Soln.](../master/Questions_by_ID/1398_Customers_Who_Bought_Products_A_and_B_but_Not_C.sql) |
 | 1407 | [Top Travellers](https://leetcode.com/problems/top-travellers/) | Easy | [Soln.](../master/Questions_by_ID/1407_Top_Travellers.sql) |
 | 1412 | [Find The Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | Medium | [Soln.](../master/Questions_by_ID/1412_Find_The_Quiet_Students_in_All_Exams.sql) |
-| 1421 | [NPV Queries](https://leetcode.cn/problems/npv-queries/) | Easy | [Soln.](../master/Questions_by_ID/1412_Find_The_Quiet_Students_in_All_Exams.sql) |
+| 1421 | [NPV Queries](https://leetcode.cn/problems/npv-queries/) | Easy | [Soln.](../master/Questions_by_ID/1421_NPV_Queries.sql) |
