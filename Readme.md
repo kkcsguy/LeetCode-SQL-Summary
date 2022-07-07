@@ -102,6 +102,7 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1378 | [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) | Easy | [Soln.](../master/Join/Simple-Join/1378_Replace_Employee_ID_With_The_Unique_Identifier.sql) |
 | 1384 | [Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/) | Hard | [Soln.](../master/Join/Simple-Join/1384_Total_Sales_Amount_by_Year.sql) |
 | 1407 | [Top Travellers](https://leetcode.com/problems/top-travellers/) | Easy | [Soln.](../master/Join/Simple-Join/1407_Top_Travellers.sql) |
+| 1421 | [NPV Queries](https://leetcode.cn/problems/npv-queries/) | Easy | [Soln.](../master/Join/Simple-Join/1421_NPV_Queries.sql) |
 
 - Advanced Join 
 
