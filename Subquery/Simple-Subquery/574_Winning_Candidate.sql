@@ -1,8 +1,9 @@
 SELECT Name
 FROM Candidate
 WHERE id = (
-    SELECT TOP 1 CandidateId
+    SELECT CandidateId
     FROM Vote
     GROUP BY CandidateId
     ORDER BY COUNT(*) DESC
+    LIMIT 1
 );
