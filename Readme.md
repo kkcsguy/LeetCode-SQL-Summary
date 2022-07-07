@@ -5,7 +5,7 @@
 
 ## Intro
 
-After finishing all 102 LeetCode SQL questions, I feel it could be good to summarize all questions by topics. 
+After finishing all 106 LeetCode SQL questions, I feel it could be good to summarize all questions by topics. 
 
 This note aims to **help people _learn and review SQL effeciently_**, espeically when trying to **have a quick catch up on a certain topic**, e.g. complex join, window function, recursive CTE and etc. If you would like to try questions by ID, you could jump to [LeetCode SQL Questions by ID](#leetcode-sql-questions-by-id) where I list all questions coverred in this repository.
 
@@ -292,7 +292,7 @@ And for the first draft, I mainly focus on **MySQL**.
 
 | **#** | **Title** | **Difficulty** | **Solution** | 
 |---|---|---|---|
-| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | [Soln.](../blob/master/OFFSET-FETCH/176_Second_Highest_Salary.sql) |
+| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | [Soln.](../master/OFFSET-FETCH/176_Second_Highest_Salary.sql) |
 | 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | [Soln.](../master/OFFSET-FETCH/177_Nth_Highest_Salary.sql) |
 | 1321 | [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | Medium | [Soln.](../master/OFFSET-FETCH/1321_Restaurant_Growth.sql) | 
 
