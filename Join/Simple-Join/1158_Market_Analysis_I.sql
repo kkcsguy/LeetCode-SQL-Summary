@@ -16,7 +16,7 @@ WITH tb1 AS (
     GROUP BY buyer_id
 )
 
-SELECT u.user_id AS buyer_id, u.join_date, ISNULL(num, 0) AS orders_in_2019
+SELECT u.user_id AS buyer_id, u.join_date, IFNULL(num, 0) AS orders_in_2019
 FROM users u
 LEFT JOIN tb1 o
 ON u.user_id = o.buyer_id;
