@@ -22,10 +22,22 @@ tb2 AS (
 -- replace the NULL with 0
 SELECT COALESCE(tb1.month,tb2.month) AS month,
      COALESCE(tb1.country,tb2.country) AS country,
-     ISNULL(tb1.approved_count,0) AS approved_count,
-     ISNULL(tb1.approved_amount,0) AS approved_amount,
-     ISNULL(tb2.chargeback_count,0) AS chargeback_count,
-     ISNULL(tb2.chargeback_amount,0) AS chargeback_amount
+     IFNULL(tb1.approved_count,0) AS approved_count,
+     IFNULL(tb1.approved_amount,0) AS approved_amount,
+     IFNULL(tb2.chargeback_count,0) AS chargeback_count,
+     IFNULL(tb2.chargeback_amount,0) AS chargeback_amount
 FROM tb1
-FULL OUTER JOIN tb2
-ON tb1.month = tb2.month AND tb1.country = tb2.country;
+LEFT JOIN tb2
+ON tb1.month = tb2.month AND tb1.country = tb2.country
+UNION
+SELECT COALESCE(tb1.month,tb2.month) AS month,
+     COALESCE(tb1.country,tb2.country) AS country,
+     IFNULL(tb1.approved_count,0) AS approved_count,
+     IFNULL(tb1.approved_amount,0) AS approved_amount,
+     IFNULL(tb2.chargeback_count,0) AS chargeback_count,
+     IFNULL(tb2.chargeback_amount,0) AS chargeback_amount
+FROM tb1
+RIGHT JOIN tb2
+ON tb1.month = tb2.month AND tb1.country = tb2.country
+
+
