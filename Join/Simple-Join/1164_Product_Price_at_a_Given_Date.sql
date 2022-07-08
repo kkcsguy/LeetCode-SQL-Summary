@@ -42,7 +42,7 @@ tb2 AS (
 
 -- if a product does not in tb2, which means it has no price change before '2019-08-16'
 -- assign the original price 10 to that product
-SELECT p.product_id, ISNULL(new_price,10) AS price
+SELECT p.product_id, IFNULL(new_price,10) AS price
 FROM (
     SELECT DISTINCT product_id 
     FROM Products
