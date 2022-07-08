@@ -1,16 +1,13 @@
--- find employees directly report to managers directly,
--- and then find people who report to managers indirectly using cte
-WITH cte AS (
-    SELECT employee_id
-    FROM Employees
-    WHERE manager_id = 1 AND employee_id != manager_id
-    UNION ALL
-    SELECT e.employee_id
+WITH RECURSIVE cte AS (
+    SELECT 1 AS id, 1 AS t
+    UNION
+    SELECT e.employee_id AS id, t+1 AS t
     FROM Employees e
-    JOIN cte
-    ON e.manager_id = cte.employee_id
+    INNER JOIN cte c
+    ON e.manager_id = c.id
+    WHERE t < 4
 )
-
-SELECT employee_id
+SELECT DISTINCT id AS EMPLOYEE_ID
 FROM cte
-OPTION (MAXRECURSION 3);
+WHERE id != 1
+ORDER BY id
