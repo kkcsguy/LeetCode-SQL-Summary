@@ -1,21 +1,19 @@
 -- Solution 1: CASE WHEN, Subquery
 WITH send AS (
     SELECT distinct sender_id, send_to_id 
-    FROM friend_request
+    FROM FriendRequest
 ),
 accept AS (
-    SELECT distinct requester_id, accepter_id 
-    FROM request_accepted
+    SELECT distinct requester_id,accepter_id 
+    FROM RequestAccepted
 )
 
 SELECT
     CASE 
         WHEN (SELECT COUNT(*) FROM send)=0 THEN 0.0 
         ELSE 
-            CAST(
-                (SELECT COUNT(*) FROM accept)*1.0/(SELECT COUNT(*) FROM send)
-                AS DECIMAL(3,2)
-            ) 
+            ROUND(
+                (SELECT COUNT(*) FROM accept)*1.0/(SELECT COUNT(*) FROM send),2 ) 
     END AS accept_rate;
 
 
