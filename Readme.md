@@ -419,4 +419,5 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1407 | [Top Travellers](https://leetcode.com/problems/top-travellers/) | Easy | [Soln.](../master/Questions_by_ID/1407_Top_Travellers.sql) |
 | 1412 | [Find The Quiet Students in All Exams](https://leetcode.com/problems/find-the-quiet-students-in-all-exams/) | Medium | [Soln.](../master/Questions_by_ID/1412_Find_The_Quiet_Students_in_All_Exams.sql) |
 | 1421 | [NPV Queries](https://leetcode.cn/problems/npv-queries/) | Easy | [Soln.](../master/Questions_by_ID/1421_NPV_Queries.sql) |
+| 1511 | [Customer Order Frequency](https://leetcode.cn/problems/customer-order-frequency/) | Easy | [Soln.](../master/Questions_by_ID/1511_Customer_Order_Frequency.sql) |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.cn/problems/customer-who-visited-but-did-not-make-any-transactions/) | Easy | [Soln.](../master/Questions_by_ID/1581_Customer_Who_Visited_but_Did_Not_Make_Any_Transactions.sql) |
