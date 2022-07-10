@@ -26,8 +26,8 @@ p AS (
 )
 
 SELECT d.spend_date, p.platform, 
-        ISNULL(total_amount,0) AS total_amount, 
-        ISNULL(total_users,0) AS total_users
+        IFNULL(total_amount,0) AS total_amount, 
+        IFNULL(total_users,0) AS total_users
 FROM d
 CROSS JOIN p
 LEFT JOIN tb2
