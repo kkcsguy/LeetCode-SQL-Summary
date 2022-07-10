@@ -6,7 +6,8 @@ WITH tb1 AS (
     FROM RequestAccepted
 )
 
-SELECT TOP 1 id, COUNT(*) AS num
+SELECT id, COUNT(*) AS num
 FROM tb1
 GROUP BY id
-ORDER BY COUNT(*) DESC;
+ORDER BY COUNT(*) DESC
+LIMIT 1
