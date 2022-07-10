@@ -367,9 +367,8 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1076 | [Project Employees II](https://leetcode.com/problems/project-employees-ii/) | Easy | [Soln.](../master/Questions_by_ID/1076_Project_Employees_II.sql) | 
 | 1077 | [Project Employees II](https://leetcode.com/problems/project-employees-iii/) | Medium | [Soln.](../master/Questions_by_ID/1077_Project_Employees_III.sql) | 
 | 1082 | [Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/) | Easy | [Soln.](../master/Questions_by_ID/1082_Sales_Analysis_I.sql) | 
-| 1083 | [Sales Analysis I](https://leetcode.com/problems/sales-analysis-ii/) | Easy | [Soln.](../master/Questions_by_ID/1083_Sales_Analysis_II.sql) | 
-| 1084 | [Sales Analysis I](https://leetcode.com/problems/sales-analysis-iii/) | Easy | [Soln.](../master/Questions_by_ID/1084_Sales_Analysis_III.sql) | 
-| 1084 | [Sales Analysis I](https://leetcode.com/problems/sales-analysis-iii/) | Easy | [Soln.](../master/Questions_by_ID/1084_Sales_Analysis_III.sql) | 
+| 1083 | [Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/) | Easy | [Soln.](../master/Questions_by_ID/1083_Sales_Analysis_II.sql) | 
+| 1084 | [Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/) | Easy | [Soln.](../master/Questions_by_ID/1084_Sales_Analysis_III.sql) | 
 | 1097 | [Game Play Analysis V](https://leetcode.com/problems/game-play-analysis-v/) | Hard | [Soln.](../master/Questions_by_ID/1097_Game_Play_Analysis_V.sql) | 
 | 1098 | [Unpopular Books](https://leetcode.com/problems/unpopular-books/) | Medium | [Soln.](../master/Questions_by_ID/1098_Unpopular_Books.sql) | 
 | 1107 | [New Users Daily Count](https://leetcode.com/problems/new-users-daily-count/) | Medium | [Soln.](../master/Questions_by_ID/1107_New_Users_Daily_Count.sql) | 
