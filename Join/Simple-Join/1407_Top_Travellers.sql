@@ -1,8 +1,8 @@
-SELECT name,
-    -- 0 will be shown as distance if no record in table Rides
-    COALESCE(SUM(distance),0) AS travelled_distance
-FROM Users
-LEFT JOIN Rides
-ON Users.id = Rides.user_id
-GROUP BY name
-ORDER BY travelled_distance DESC, name
+SELECT name, 
+       Ifnull(Sum(distance), 0) AS travelled_distance 
+FROM   users 
+       LEFT JOIN rides 
+              ON users.id = rides.user_id 
+GROUP  BY name 
+ORDER  BY travelled_distance DESC, 
+          name; 
