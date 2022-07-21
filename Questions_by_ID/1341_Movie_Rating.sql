@@ -1,21 +1,25 @@
 -- Solution: Subquery
-SELECT MIN(name) AS results
-FROM Users
-WHERE user_id IN (
-    -- find users who rated greatest number of the movies
-    SELECT TOP 1 WITH TIES user_id
-    FROM Movie_Rating
-    GROUP BY user_id
-    ORDER BY COUNT(DISTINCT movie_id) DESC
-)
+(SELECT b.name AS results 
+ FROM   (SELECT a.user_id, 
+                Count(*) AS cnt 
+         FROM   MovieRating a 
+         GROUP  BY a.user_id) a 
+        INNER JOIN Users b 
+               ON a.user_id = b.user_id 
+ ORDER  BY a.cnt DESC, 
+           b.name ASC 
+ LIMIT  1) 
 UNION ALL 
-SELECT MIN(title) AS results
-FROM Movies
-WHERE movie_id IN (
-    -- find movies with highest average rating in Feb. 2020
-    SELECT TOP 1 WITH TIES movie_id
-    FROM Movie_Rating
-    WHERE YEAR(created_at) = 2020 AND MONTH(created_at) = 2
-    GROUP BY movie_id
-    ORDER BY AVG(rating*1.0) DESC
-);
+(SELECT b.movie_name 
+ FROM   (SELECT a.movie_name, 
+                Avg(a.rating) AS max_rating 
+         FROM   (SELECT a.rating,
+                        b.title AS movie_name 
+                 FROM   MovieRating a 
+                        INNER JOIN Movies b 
+                                ON a.movie_id = b.movie_id 
+                 WHERE  a.created_at BETWEEN '2020-02-01' AND '2020-02-29') a 
+         GROUP  BY a.movie_name) b 
+ ORDER  BY b.max_rating DESC, 
+           b.movie_name ASC 
+ LIMIT  1); 
