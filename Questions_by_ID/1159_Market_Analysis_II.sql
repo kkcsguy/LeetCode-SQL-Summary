@@ -6,7 +6,7 @@ WITH tb1 AS (
         SELECT seller_id, item_id,
             ROW_NUMBER() OVER (PARTITION BY seller_id ORDER BY order_date) AS r
         FROM Orders
-        ) rank
+        ) `rank`
     WHERE r = 2
 )
 
