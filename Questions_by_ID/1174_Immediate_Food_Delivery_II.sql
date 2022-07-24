@@ -29,14 +29,12 @@ WITH tb1 AS (
     FROM delivery
 )
 
-SELECT CAST(
+SELECT Round(
     AVG(
         CASE
             WHEN order_date = customer_pref_delivery_date THEN 100.0
             ELSE 0
         END
-       )
-    AS DECIMAL(5,2)
-) AS immediate_percentage
+       ),2) AS immediate_percentage
 FROM tb1
 WHERE r = 1;
