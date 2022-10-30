@@ -288,16 +288,6 @@ And for the first draft, I mainly focus on **MySQL**.
 | 1393 | [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/) | Medium | [Soln.](../master/CASE-WHEN/1393_Capital_Gain_Loss.sql) |
 | 1398 | [Customers Who Bought Products A and B but Not C](https://leetcode.com/problems/customers-who-bought-products-a-and-b-but-not-c/) | Medium | [Soln.](../master/CASE-WHEN/1398_Customers_Who_Bought_Products_A_and_B_but_Not_C.sql) |
 
-### OFFSET FETCH
-
-| **#** | **Title** | **Difficulty** | **Solution** | 
-|---|---|---|---|
-| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | [Soln.](../master/OFFSET-FETCH/176_Second_Highest_Salary.sql) |
-| 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | [Soln.](../master/OFFSET-FETCH/177_Nth_Highest_Salary.sql) |
-| 1321 | [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/) | Medium | [Soln.](../master/OFFSET-FETCH/1321_Restaurant_Growth.sql) | 
-
-
-
 ### Variable
 
 | **#** | **Title** | **Difficulty** | **Solution** | 
