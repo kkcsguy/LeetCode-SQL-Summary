@@ -17,10 +17,11 @@ WHERE r = 2;
 
 
 -- Solution 1: OFFSET FETCH
-SELECT (
-    SELECT DISTINCT salary
-    FROM employee
-    ORDER BY salary DESC
-    OFFSET 1 ROW
-    FETCH NEXT 1 ROW ONLY
-) AS SecondHighestSalary;
+SELECT
+    (SELECT DISTINCT
+            Salary
+        FROM
+            Employee
+        ORDER BY Salary DESC
+        LIMIT 1 OFFSET 1) AS SecondHighestSalary
+;
